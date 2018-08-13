@@ -1,0 +1,45 @@
+{
+  "name": "babel-plugin-require-glob",
+  "version": "0.1.0",
+  "description": "Babel plugin which gives you ability to require globs.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib && ./node_modules/.bin/babel src --out-dir lib",
+    "standard": "standard \"src/**/*.js\" --fix",
+    "precommit": "standard \"src/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonsure2/babel-plugin-require-glob.git"
+  },
+  "keywords": [
+    "babel-plugin",
+    "glob"
+  ],
+  "author": "wonsure2 <wonsure2@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wonsure2/babel-plugin-require-glob/issues"
+  },
+  "homepage": "https://github.com/wonsure2/babel-plugin-require-glob#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "husky": "^0.14.3",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "glob": "^7.1.2"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "files": [
+    "lib",
+    "package.json",
+    "README.md"
+  ]
+}
